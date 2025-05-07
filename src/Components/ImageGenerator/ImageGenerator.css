@@ -31,9 +31,38 @@
 .search-box{
     display: flex;
     width: 1000px;
-    height: 95px;
+    height: 85px;
     justify-content:space-around; /*each flex item is surrounded by equal space*/
     align-items: center;
     border-radius: 50px;
-    background: #806b5e
+    background: #382f28
+}
+
+/* the css for the text in the search box*/
+.search-input{
+    width: 600px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px; /* The text inside is 18 pixels in size */
+    color: white; /*the text color*/
+    padding-left: 35px;
+    margin-right: 35px;
+}
+
+.search-input::placeholder{ /*for the words "describe what you want to see" */
+    color: #9b9a9a
+}
+
+/* the generated button */
+.generate-btn{
+    display: flex; /* Makes the button a flex container, so its child elements can be easily aligned */
+    align-items: center; /* Vertically centers the content inside the button */
+    justify-content: center; /* Horizontally centers the content inside the button */
+    width: 300px;
+    height: 75px;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #b36572
 }
